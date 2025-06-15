@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Bond 007 Museum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid #ffd700;
+        }
+
+        .navbar-brand {
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ffd700;
+        }
+
+        .home-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://i.ibb.co/RGy52WM3/jamesbond.webp');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .home-content h1 {
+            font-size: 4rem;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .section-title {
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .exhibit-card {
+            background-color: #000000;
+            border: 1px solid #ffd700;
+            transition: transform 0.3s ease;
+        }
+
+        .exhibit-card .card-body {
+            padding: 1.5rem;
+        }
+
+        .exhibit-card .card-title {
+            color: #ffd700;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .exhibit-card .card-text {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .exhibit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .exhibit-column {
+            width: 33.333333%;
+            padding: 0 15px;
+        }
+
+        .info-column {
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .footer-content {
+            width: 100%;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        @media (max-width: 768px) {
+            .exhibit-column,
+            .info-column {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .footer {
+            background-color: #000000;
+            border-top: 2px solid #ffd700;
+            padding: 40px 0;
+        }
+
+        .social-icons a {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">007 MUSEUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exhibits">Exhibits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visit">Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <h1>JAMES BOND 007 MUSEUM</h1>
+                <p class="lead text-white">Experience the world's largest collection of James Bond memorabilia</p>
+                <a href="#visit" class="btn btn-outline-warning btn-lg mt-3">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="exhibits" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Featured Exhibits</h2>
+            <div class="row g-4">
+                <div class="exhibit-column">
+                    <div class="card exhibit-card h-100">
+                        <img src="https://i.ibb.co/35BN3yD6/The-10-Most-Unforgettable-James-Bond-Cars-of-All-Time-1-2.jpg" class="card-img-top" alt="Bond Cars">
+                        <div class="card-body">
+                            <h5 class="card-title">Iconic Vehicles</h5>
+                            <p class="card-text">Explore the legendary cars and motorcycles from the James Bond films.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibit-column">
+                    <div class="card exhibit-card h-100">
+                        <img src="https://i.ibb.co/nqBpzf7W/IMG-9258-Edit.webp" class="card-img-top" alt="Bond Gadgets">
+                        <div class="card-body">
+                            <h5 class="card-title">Iconic Gadgets</h5>
+                            <p class="card-text">Discover the ingenious gadgets and weapons used by 007.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibit-column">
+                    <div class="card exhibit-card h-100">
+                        <img src="https://i.ibb.co/XrH9vsz9/designing-007-casino-room-photo-crop.jpg" class="card-img-top" alt="Bond Costumes">
+                        <div class="card-body">
+                            <h5 class="card-title">Costumes & Props</h5>
+                            <p class="card-text">View authentic costumes and props from the James Bond films.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center">Plan Your Visit</h2>
+            <div class="row">
+                <div class="info-column">
+                    <h3 class="text-gold">Opening Hours</h3>
+                    <p>Monday - Friday: 10:00 - 17:00</p>
+                    <p>Saturday - Sunday: 10:00 - 18:00</p>
+                    <p>Closed: 13-16 June, 27-29 June, 9-20 September</p>
+                </div>
+                <div class="info-column">
+                    <h3 class="text-gold">Location</h3>
+                    <p>James Bond 007 Museum</p>
+                    <p>Emmabodav. 20</p>
+                    <p>S-382 45 Nybro, Sweden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="row">
+                <div class="info-column">
+                    <h3 class="text-gold">Get in Touch</h3>
+                    <p>Phone: +46-481-12960</p>
+                    <p>Mobile: +46-734-477 007</p>
+                    <p>Email: 007museum@telia.com</p>
+                </div>
+                <div class="info-column">
+                    <h3 class="text-gold">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <p>&copy; 2024 James Bond 007 Museum. All Rights Reserved.</p>
+                    <p>James Bond Materials © 1962 - 2024 United Artists Corporation and Danjaq, LLC.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
